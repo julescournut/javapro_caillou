@@ -1,13 +1,15 @@
 package isima.caillou;
 
-public class Response {
-    private final String code;
+import org.json.JSONObject;
 
-    public Response(String code) {
-        this.code = code;
+public class Response {
+    private final Product product;
+
+    public Response(Product product) {
+        this.product = product;
     }
 
-    public String getCode() {
-        return code;
+    public Product getProduct() {
+        return product;
     }
 }

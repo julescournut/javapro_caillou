@@ -142,5 +142,5 @@ Votre application devra lister pour chaque produit ses qualités et ses défauts
  
  ## 9 - Conseils pour les outils à utiliser
  
- Requête API -> Unirest
- BDD -> H2
+ - Requête API -> Unirest
+ - BDD -> H2

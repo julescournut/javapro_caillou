@@ -37,17 +37,5 @@ public class CaillouApplication {
 				}
 			}
 		});
-
-		getDataFromAPI("3029330003533");
-	}
-
-	private static void getDataFromAPI(String code) {
-		// Response to Object
-		try {
-			JSONObject requestResponse = Unirest.get("https://fr.openfoodfacts.org/api/v0/produit/" + code + ".json").asJson().getBody().getObject();
-			System.out.println(requestResponse.getJSONObject("product").getJSONObject("nutriments").getString("energy_100g"));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 }
