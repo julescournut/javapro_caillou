@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Product implements Serializable {
     public String name;
+    public String codeBar;
     public Nutriments nutriments;
     public String classe;
     public int scoreNutritionnel;

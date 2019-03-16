@@ -1,5 +1,19 @@
 # Caillou
 
+## Utilisation de notre API 
+
+Une fois le projet cloné, lancer CaillouApplication.
+
+Routes disponibles :
+
+- localhost:8080/basket?email=[email]&numBasket=[numBasket]
+    > Affiche le contenu du panier selectionné avec les produits présents dans ce panier et les qualités et défauts du panier.
+- localhost:8080/addToBasket?code=[codeBar]&email=[email]&numBasket=[numBasket]
+    > Ajoute un produit au panier selectionné (plusieurs ajouts du même produit sont possibles)
+- localhost:8080/removeFromBasket?code=[codeBar]&email=[email]&numBasket=[numBasket]
+    > Enlève la première occurence du produit
+
+
 ## 1 - Objectifs du TP 
 L'objectif de ce TP est de réaliser une application Spring Boot permettant d'obtenir des informations de nutritions de différents produits.  
 Cette application récupérera des données sur les produits auprès d'une API publique, Open Food Facts. Elle mesurera différentes informations sur les qualités nutritives des produits et exposera les résultats de ces analyses sous forme d'une API REST.  
